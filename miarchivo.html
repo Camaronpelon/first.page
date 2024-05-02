@@ -3,7 +3,8 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Interfaz Colorida con Botones</title>
+    <title id="title">Interfaz Colorida con Botones</title>
+    <link rel="stylesheet" href="styles.css">
 
 </head>
 <body>
@@ -30,6 +31,15 @@
     <footer>
         <p>Pie de página - © 2024</p>
     </footer>
-
+    <script>
+        let titleElement = document.getElementById("title");
+        let colors = ["red", "blue", "green", "yellow", "purple"];
+        let index = 0;
+    
+        setInterval(function() {
+          titleElement.style.color = colors[index];
+          index = (index + 1) % colors.length;
+        }, 1000); // change color every 1 second
+      </script>
 </body>
 </html>
