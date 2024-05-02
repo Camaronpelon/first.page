@@ -57,3 +57,14 @@ main {
 .info-box p {
     color: #666;
 }
+footer{
+    background-color: #4CAF50;
+    color: white;
+    width: 100%;
+    padding: 15px;
+    position: fixed;
+    left: 0px;
+    right: 0px;
+    bottom: 0px;
+    text-align: center;
+}
